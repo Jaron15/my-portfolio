@@ -11,12 +11,15 @@ function Nav(props) {
     document.title = currentPage.name
   }, [currentPage]);
 
-  return (    
+  return ( 
+         
       <nav>
-        <ul className="flex-row">
+          <div className="nav-img">
+              <h1>Jaron Kenyon</h1>
+        <ul className="flex-row nav-row">
           {pages.map((page) => (
             <li
-              className={`mx-5 ${
+              className={`mx-5 nav-items ${
                 currentPage.name === page.name && 'navActive'
                 }`}
               key={page.name}
@@ -29,6 +32,7 @@ function Nav(props) {
             </li>
           ))}
         </ul>
+        </div>
       </nav>
   );
 }
