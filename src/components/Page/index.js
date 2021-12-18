@@ -2,7 +2,7 @@ import React from 'react';
 import About from '../About';
 import Portfolio from '../Portfolio';
 // import Contact from '../Contact';
-// import Resume from '../Resume';
+import Resume from '../Resume';
 
 function Page({ currentPage }) {
 
@@ -14,8 +14,8 @@ function Page({ currentPage }) {
          return <Portfolio />;
     //   case 'contact':
     //     return <Contact />;
-    //   case 'resume':
-    //     return <Resume />;
+      case 'Resume':
+        return <Resume />;
        default:
         return <About />;
     }
