@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import PhotoList from '../PhotoList';
+
 
 
 function Portfolio() {
@@ -7,12 +9,10 @@ function Portfolio() {
     <section className="my-5" >
       <h1 id="about">Portfolio</h1>
       <div className="my-2">
-        <p>
-          Portfolio text here
-      </p>
+        <PhotoList />
       </div>
     </section>
   )
 }
 
-export default Portfolio
+export default Portfolio;

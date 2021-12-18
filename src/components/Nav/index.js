@@ -11,7 +11,7 @@ function Nav(props) {
     document.title = currentPage.name
   }, [currentPage]);
 
-  return ( 
+  return (  
          
       <nav>
           <div className="nav-img">
