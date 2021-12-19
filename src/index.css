@@ -219,3 +219,16 @@ button {
   background-color: rgb(43, 43, 43);
 }
 
+footer {
+  position: relative;
+  margin-top: 3vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.gIcon {
+  width: 20vh
+}
+

@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav';
 import Page from './components/Page';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         currentPage={currentPage}
       ></Nav>
       <Page currentPage={currentPage}></Page>
+      <Footer />
     </div>
   );
 }
