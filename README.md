@@ -14,7 +14,7 @@ This is a portfolio for myself, Jaron Kenyon. This is a SPA (single page applica
 
 
 ## References
- Link to active page: 
+ Link to active page: https://jaron15.github.io/my-portfolio/
  
  Link to repository: https://github.com/Jaron15/my-portfolio.git
  
