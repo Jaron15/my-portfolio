@@ -5,10 +5,9 @@ function Resume() {
 
   return (
     <section className="my-5" >
-      <h1 id="about">Resume</h1>
       <div className="my-2">
         <h2>Front-end Proficiencies</h2>
-        <ul>
+        <ul className="resumeList">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -19,7 +18,7 @@ function Resume() {
         </ul>
 
         <h2>Back-end Proficiencies</h2>
-        <ul>
+        <ul className="resumeList">
             <li>APIs</li>
             <li>Node</li>
             <li>Express</li>

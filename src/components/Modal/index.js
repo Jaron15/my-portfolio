@@ -6,19 +6,19 @@ function Modal({ onClose, currentPhoto }) {
         <div className="modalBackdrop">
           <div className="modalContainer">
             <h3 className="modalTitle">{name}</h3>
-            <img src={require(`../../assets/projects/${index}.JPG`).default} alt="current category" />
-           
-            <button type="button" onClick={onClose}>
+            <img src={require(`../../assets/projects/${index}.JPG`)} alt="current category" className="modalPic" />
+        
+            <button type="button" onClick={onClose} className="modal-buttons">
                 Close this modal
             </button>
 
-            <button type="button" onClick={onClose}>
-                {deployedApp}
-            </button>
+            <a href={deployedApp} className="modal-buttons link">
+                Visit deployed application
+            </a>
 
-            <button type="button" onClick={onClose}>
-                {repo}
-            </button>
+            <a href={repo} className="modal-buttons link">
+                Visit Github repository
+            </a>
         </div>
     </div>
     );

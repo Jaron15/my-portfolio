@@ -7,7 +7,7 @@ function Portfolio() {
 
   return (
     <section className="my-5" >
-      <h1 id="about">Portfolio</h1>
+      <h1 id="about">Projects</h1>
       <div className="my-2">
         <PhotoList />
       </div>

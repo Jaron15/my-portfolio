@@ -1,7 +1,7 @@
 import React from 'react';
 import About from '../About';
 import Portfolio from '../Portfolio';
-// import Contact from '../Contact';
+import Contact from '../Contact';
 import Resume from '../Resume';
 
 function Page({ currentPage }) {
@@ -12,8 +12,8 @@ function Page({ currentPage }) {
         return <About />;
       case 'Portfolio':
          return <Portfolio />;
-    //   case 'contact':
-    //     return <Contact />;
+       case 'Contact':
+         return <Contact />;
       case 'Resume':
         return <Resume />;
        default:
