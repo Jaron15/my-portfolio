@@ -42,6 +42,7 @@ nav {
   color: #88a8c7;
   font-size: 3.5vh;
   transition: .5s;
+  cursor: pointer;
 }
 .nav-row {
   list-style: none;
@@ -203,14 +204,14 @@ button {
 
 #contact-form input {
   width: 100%;
-  margin: 1vh;
+  margin: 1.5vh auto 1.5vh auto;
   text-align: center;
   box-shadow: -2px 0 rgb(43, 43, 43), 0 2px rgb(43, 43, 43), 2px 0 rgb(43, 43, 43), 0 -2px rgb(43, 43, 43);
 }
 
 #contact-form textarea {
   width: 100%;
-  margin: 1vh;
+  margin: auto;
   text-align: center;
   box-shadow: -2px 0 rgb(43, 43, 43), 0 2px rgb(43, 43, 43), 2px 0 rgb(43, 43, 43), 0 -2px rgb(43, 43, 43);
 }

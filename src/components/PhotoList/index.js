@@ -5,9 +5,9 @@ const PhotoList = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [photos] = useState([
     {
-      name: 'Boot Camp Blues',
-      deployedApp: 'https://evening-cliffs-89328.herokuapp.com/',
-      repo: 'https://github.com/cclund444/bootcampblues.git',
+      name: 'Black Bear Diner',
+      deployedApp: 'https://black-bear-bakery.herokuapp.com/',
+      repo: 'https://github.com/nicoguarino/Black-Bear-Bakery',
     },
     {
         name: 'The Tech Blog',
@@ -24,7 +24,11 @@ const PhotoList = () => {
         deployedApp: 'https://note-takr-1.herokuapp.com/',
         repo: 'https://github.com/Jaron15/note-taker.git',
     },
-    
+    {
+      name: 'Boot Camp Blues',
+      deployedApp: 'https://evening-cliffs-89328.herokuapp.com/',
+      repo: 'https://github.com/cclund444/bootcampblues.git',
+    }
   ]);
 
   const [currentPhoto, setCurrentPhoto] = useState();
