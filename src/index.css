@@ -33,6 +33,7 @@ code {
   margin-bottom: 4vh;
 }
 nav {
+  
   font-family: 'Fugaz One';
   text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
@@ -45,12 +46,13 @@ nav {
   cursor: pointer;
 }
 .nav-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   list-style: none;
   width: 100%;
-  text-align: end;
   font-weight: bold;
   font-size: 3vh;
-  
 }
 .nav-items {
   display: inline;
@@ -119,6 +121,12 @@ nav {
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
+  -webkit-backface-visibility: hidden;
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+
+
 }
 
 .modalBackdrop {
@@ -130,6 +138,7 @@ nav {
 	right: 0;
 	top: 0;
 	z-index: 1;
+  width:100%;
 }
 
 .modalContainer {
@@ -149,11 +158,11 @@ nav {
 }
 
 .modalPic {
-  width: 850px;
+  width: 90%;
   height: 450px;
   margin-bottom: 80px;
   cursor: pointer;
-
+  image-rendering: auto;
   box-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
@@ -231,5 +240,45 @@ footer {
 }
 .gIcon {
   width: 20vh
+}
+.resume-container {
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  height: 70vh;
+  width: 80vh;
+  border: 5px solid black;
+  
+}
+
+@media screen and (max-width: 1075px) {
+  .nav-row {
+    font-size: 2vh;
+  }
+  iframe {
+    height: 70vh;
+    /* width: 100%; */
+    border: 5px solid black;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .modal-buttons {
+    margin: 1vh 7vh 1vh 7vh;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width: 560px) {
+ iframe{ 
+   overflow: hidden;
+  aspect-ratio: 8.5/11;
+ }
+ .resume-container {
+   width: 100%;
+   overflow: hidden;
+ }
 }
 

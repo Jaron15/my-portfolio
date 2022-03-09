@@ -4,30 +4,8 @@ import React from 'react'
 function Resume() {
 
   return (
-    <section className="my-5" >
-      <div className="my-2">
-        <h2>Front-end Proficiencies</h2>
-        <ul className="resumeList">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>Responsive design</li>
-            <li>React</li>
-            <li>Bootstrap</li>
-        </ul>
-
-        <h2>Back-end Proficiencies</h2>
-        <ul className="resumeList">
-            <li>APIs</li>
-            <li>Node</li>
-            <li>Express</li>
-            <li>MySQL, Sequelize</li>
-            <li>MongoDB, Mongoose</li>
-            <li>REST</li>
-            <li>GraphQL</li>
-        </ul>
-      </div>
+    <section className="resume-container" >
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTBIjpdIRi-JWDPF-WWltmPpbRi8DcWHF_G5Q3MAbUgOXj3JAKS3gJbtEHyQ2CKA1MFoOWhs_OimAJx/pub?embedded=true"  marginheight="0" marginwidth="0" frameborder="0" scrolling="auto"></iframe>
     </section>
   )
 }

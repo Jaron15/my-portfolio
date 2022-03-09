@@ -5,7 +5,7 @@ const PhotoList = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [photos] = useState([
     {
-      name: 'Black Bear Diner',
+      name: 'Black Bear Bakery',
       deployedApp: 'https://black-bear-bakery.herokuapp.com/',
       repo: 'https://github.com/nicoguarino/Black-Bear-Bakery',
     },
