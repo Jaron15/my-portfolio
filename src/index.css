@@ -239,6 +239,9 @@ iframe {
   .nav-row {
     font-size: 2vh;
   }
+  .nav-items:hover {
+    font-size: 2vh;
+  }
   iframe {
     height: 70vh;
     /* width: 100%; */
