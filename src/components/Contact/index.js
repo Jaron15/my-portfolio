@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import { validateEmail } from '../../utils/helpers';
+import React from 'react';
 import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 
@@ -17,10 +16,12 @@ const sendEmail = (e) => {
     .then((result) => {
       console.log(result.text);
       alert("Sent!");
+      form.current.reset();
     }, (error) => {
       console.log(error.text);
       alert("FAILED...", error);
     });
+    
 };
 
 
@@ -35,10 +36,10 @@ const sendEmail = (e) => {
         <form ref={form} onSubmit={sendEmail}>
           {/* <!-- name --> */}
           <div className="form-group">
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input
               type="name"
-              name="name"
+              name="from_name"
               className="form-control"
               id="name"
               placeholder="enter your name"
@@ -47,10 +48,10 @@ const sendEmail = (e) => {
 
           {/* <!-- email --> */}
           <div className="form-group">
-            <label for="email">Email address</label>
+            <label htmlFor="email">Email address</label>
             <input
               type="email"
-              name="email"
+              name="from_email"
               className="form-control"
               id="email"
               placeholder="enter your email"
@@ -59,7 +60,7 @@ const sendEmail = (e) => {
 
           {/* <!-- subject --> */}
           <div className="form-group">
-            <label for="subject">Subject</label>
+            <label htmlFor="subject">Subject</label>
             <input
               type="text"
               name="subject"
@@ -70,8 +71,9 @@ const sendEmail = (e) => {
           </div>
 
           <div className="form-group">
-            <label for="email_body">Message</label>
+            <label htmlFor="email_body">Message</label>
             <textarea
+            name="message"
               className="form-control"
               id="email_body"
               rows="5"
