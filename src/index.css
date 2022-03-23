@@ -202,31 +202,14 @@ button {
   list-style-type: none;
 }
 
-#contact-form {
-  background-color: black;
-  margin: auto ;
-  width: 30%;
-  padding: 2vh;
-  border-radius: 5px;
-  box-shadow: -4px 0 rgb(43, 43, 43), 0 4px rgb(43, 43, 43), 4px 0 rgb(43, 43, 43), 0 -4px rgb(43, 43, 43);
+.form-control {
+  margin:1vh 0 1vh 0;
 }
-
-#contact-form input {
-  width: 100%;
-  margin: 1.5vh auto 1.5vh auto;
-  text-align: center;
-  box-shadow: -2px 0 rgb(43, 43, 43), 0 2px rgb(43, 43, 43), 2px 0 rgb(43, 43, 43), 0 -2px rgb(43, 43, 43);
+.contactBtn {
+  background-color:#597081;
 }
-
-#contact-form textarea {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  box-shadow: -2px 0 rgb(43, 43, 43), 0 2px rgb(43, 43, 43), 2px 0 rgb(43, 43, 43), 0 -2px rgb(43, 43, 43);
-}
-
-#contact-form button {
-  background-color: rgb(43, 43, 43);
+.contactBtn:hover {
+  background-color:#88a8c7;
 }
 
 footer {
