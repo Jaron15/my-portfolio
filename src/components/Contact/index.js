@@ -21,7 +21,6 @@ const sendEmail = (e) => {
       console.log(error.text);
       alert("FAILED...", error);
     });
-    
 };
 
 
@@ -30,7 +29,7 @@ const sendEmail = (e) => {
         
     <div className="container">
     <div className="row">
-      <div className="col align-self-center">
+      <div className="col-6 align-self-center">
         <h1 className="text-center">Contact me by Email:</h1>
         {/* <!-- contact form --> */}
         <form ref={form} onSubmit={sendEmail}>
@@ -84,6 +83,13 @@ const sendEmail = (e) => {
             Submit
           </button>
         </form>
+      </div>
+      <div className="col-6 Cdetails">
+        <h1>Contact Details:</h1>
+        <p>Email Address: jaronkenyon@gmail.com</p> 
+        <p>Github: https://github.com/Jaron15</p>
+        <p>Linkedin: https://www.linkedin.com/in/jaron-kenyon-41917b217/</p>
+        <p></p>
       </div>
     </div>
   </div>
