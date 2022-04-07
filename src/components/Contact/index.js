@@ -22,7 +22,7 @@ const sendEmail = (e) => {
       alert("FAILED...", error);
     });
 };
-
+ 
 
       
     return (
