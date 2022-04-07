@@ -11,23 +11,30 @@ body {
   background-color: #283538;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  overflow: hidden;
+  overflow: auto;
+  
 }
 html {
   overflow: hidden;
   height: 100%;
+ 
 }
 
 :root {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-
+  height: 100%;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.page {
+  padding-bottom: 5vh;
 }
 .page-title{
   font-size: 5vh;
@@ -234,13 +241,20 @@ button {
 
 
 footer {
-  position: relative;
-  margin-top: 3vh;
+  position: absolute;
+  margin-top: auto;
   left: 0;
   bottom: 0;
+  right: 0;
   width: 100%;
   color: white;
   text-align: center;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  background-color:#283538;
+}
+footer a {
+  padding: 1vh
 }
 .gIcon {
   width: 20vh
@@ -254,6 +268,11 @@ iframe {
   width: 80vh;
   border: 5px solid black;
 }
+.App {
+  height: 100vh;
+  width: 100%;
+}
+
 
 
 @media screen and (max-width: 1075px) {

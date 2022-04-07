@@ -27,72 +27,17 @@ const sendEmail = (e) => {
       
     return (
         
-    <div className="container">
-    <div className="row">
-      <div className="col-6 align-self-center">
-        <h1 className="text-center">Contact me by Email:</h1>
-        {/* <!-- contact form --> */}
-        <form ref={form} onSubmit={sendEmail}>
-          {/* <!-- name --> */}
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input
-              type="name"
-              name="from_name"
-              className="form-control"
-              id="name"
-              placeholder="enter your name"
-            />
-          </div>
+    
 
-          {/* <!-- email --> */}
-          <div className="form-group">
-            <label htmlFor="email">Email address</label>
-            <input
-              type="email"
-              name="from_email"
-              className="form-control"
-              id="email"
-              placeholder="enter your email"
-            />
-          </div>
-
-          {/* <!-- subject --> */}
-          <div className="form-group">
-            <label htmlFor="subject">Subject</label>
-            <input
-              type="text"
-              name="subject"
-              className="form-control"
-              id="subject"
-              placeholder="enter email subject"
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="email_body">Message</label>
-            <textarea
-            name="message"
-              className="form-control"
-              id="email_body"
-              rows="5"
-            ></textarea>
-          </div>
-
-          <button type="submit" className="contactBtn">
-            Submit
-          </button>
-        </form>
-      </div>
-      <div className="col-6 Cdetails">
+     
+      <div className="Cdetails">
         <h1>Contact Details:</h1>
         <p>Email Address: jaronkenyon@gmail.com</p> 
         <p>Github: https://github.com/Jaron15</p>
         <p>Linkedin: https://www.linkedin.com/in/jaron-kenyon-41917b217/</p>
         <p></p>
       </div>
-    </div>
-  </div>
+  
       )
     
 }
