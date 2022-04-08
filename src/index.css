@@ -205,10 +205,7 @@ button {
 }
 .modal-buttons:hover {
   color: #A9CEF4;
-  text-decoration: none;
-  font-weight: bold;
   background-color: black;
-  margin: 2vh;
 }
 .link {
   padding: 1.23vh;
@@ -267,6 +264,7 @@ iframe {
   height: 70vh;
   width: 80vh;
   border: 5px solid black;
+  overflow: hidden;
 }
 .App {
   height: 100vh;
